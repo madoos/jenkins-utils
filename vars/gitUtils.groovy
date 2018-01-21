@@ -15,3 +15,7 @@ def CSM(conf) {
         sh("git checkout ${env.BRANCH_NAME}")
     }
 }
+
+def test(conf){
+    println "${conf.test}"
+}
