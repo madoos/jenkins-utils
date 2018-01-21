@@ -46,5 +46,5 @@ def npmPublish(conf){
 }
 
 def getRelease(){
-  return env.BRANCH_NAME.contains("/v") ? branch.split("/v")[1] : branch.split("/")[1]
+  return env.BRANCH_NAME.contains("/v") ? env.BRANCH_NAME.split("/v")[1] : env.BRANCH_NAME.split("/")[1]
 }
